@@ -387,6 +387,10 @@ header.scrolled-up {
 }
 
 
+.span-4 { grid-column-end: span 4; grid-row-end: span 4; }
+
+
+
 .line-divider {
   width: 30%;             /* adjust width */
   border: none;
