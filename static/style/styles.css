@@ -82,6 +82,7 @@ header.scrolled-up {
     /* flex-direction: column; */
     padding: 0 20px;
     background-color: var(--contrast-color);
+    font-family: var(--font-oswald);
 
   }
   
@@ -519,7 +520,7 @@ header.scrolled-up {
   grid-auto-flow: dense;
   /* padding: 5px; */
   margin-top : 10.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 .grid-item {
