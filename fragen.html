@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %}Fragen und Angebote | Antik Hoelzli{% endblock %}
+
+{% block content %}
+<div class="contact-container">
+  <div>
+    Click here to copy our email:
+    <a href="#" onclick="copyEmail()">📋 Copy Email</a>
+  </div>
+  <div>
+    Sie konnten uns besichtigen:
+    <iframe class="google-map" src="https://www.google.com/maps/embed?..."></iframe>
+  </div>
+</div>
+
+<div class="choice-wrapper">
+  <img src="{% static 'style/images/girl_bench.png' %}" alt="Background">
+  <div class="buttons-overlay">
+    <a href="{% url 'leistungen' %}" class="button-link">Leistungen</a>
+    <a href="{% url 'gallerie' %}" class="button-link">Gallerie</a>
+  </div>
+</div>
+{% endblock %}

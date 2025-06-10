@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %}Leistungen | Antik Hoelzli{% endblock %}
+
+{% block content %}
+<div class="gallerie-image">
+  <img src="{% static 'style/images/panorama/tools/liquid_cleaned.png' %}" alt="Barockmöbel" />
+  <div class="leistungen-label">Leistungen.</div>
+</div>
+
+<hr class="line-divider">
+
+<div class="leistungen-title">Bei Antik Hölzli bieten wir verschiedene Leistungen und mehr.</div>
+
+<div class="leistungen-wrapper">
+  {% for _ in '1234'|make_list %}
+  <div class="flex-card-container">
+    <div class="card flex-card">
+      <img src="{% static 'style/images/tools/hammer.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text...</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<span class="separator-dot-choice-wrapper" >♦</span>
+
+<div class="choice-wrapper">
+  <img src="{% static 'style/images/panorama/lea_thomas/lea_thomas_bg_grey.png' %}" alt="Background">
+  <div class="buttons-overlay">
+    <a href="{% url 'gallerie' %}" class="button-link">Leistungen</a>
+    <a href="{% url 'fragen' %}" class="button-link">Frage und Angebote</a>
+  </div>
+</div>
+{% endblock %}
