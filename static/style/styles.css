@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 
@@ -10,7 +11,7 @@
     --font-tertiary: 'Cormorant Garamond', serif;
     --font-quaternary: 'Lato', sans-serif;
     --background-color: #ffffff;
-    --contrast-color: #020610;
+    --contrast-color: #000000;
       /* --contrast-color: #102563; */
     --hover-color: #0d1e50;
     --width-wrapper : 80%;
@@ -19,6 +20,9 @@
     --font-size-min: 3rem;   /* Minimum size, e.g., for phones */
   --font-size-ideal: 8vw;  /* Scales with viewport width */
   --font-size-max: 7rem;   /* Maximum size, e.g., for desktops */
+  --margin-top-below-nav-bar-mobile: 160px; /* Adjust this value to match your header height */
+  --font-oswald: 'Oswald', sans-serif;
+  --light-brown-color: #c1b693;
 }
 
 
@@ -26,7 +30,6 @@ body {
   margin : 0;
     margin-top: 80px; /* adjust to match your header height */
     background-color: var(--background-color);
-  
     font-family: var(--font-primary);
     align-items: center;
     font-size: clamp(16px, 2vw, 24px); /* 🔁 Responsive base size */
@@ -103,7 +106,6 @@ header.scrolled-up {
 .questions-button {
     background-color: var(--contrast-color);
     padding: 8px 30px;
-    border-radius: 2px;
     flex-shrink: 0;
     white-space: nowrap;   /* prevents text from wrapping */
     cursor: pointer;
@@ -121,8 +123,10 @@ header.scrolled-up {
 .index-container {
   position: relative;
   width: 100%;
-  margin-top : 80px;
+  margin-top : var(--margin-top-below-nav-bar-mobile);
 }
+
+
 
 .index-container img {
   width: 100%;
@@ -153,10 +157,14 @@ header.scrolled-up {
   width: 80%;
 }
 
-.index-text p {
-  font-size: clamp(18px, 2vw, 30px);
+.index-text-item {
+  font-size: clamp(28px, 4vw, 50px);
   margin: 0.2rem 0;
   text-align: center;
+  font-family: var(--font-oswald);
+    color: rgb(255, 255, 255);
+  
+ 
 }
 
 .index-btn-wrapper {
@@ -169,14 +177,16 @@ header.scrolled-up {
 .index-btn {
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  background-color: #000000;
+  background-color: var(--light-brown-color);
   color: #ffffff;
   border: none;
-  border-radius: 0.3rem;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
   box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  font-size : 1.8em;
+  white-space: nowrap; /* Prevents text from wrapping */
+  
 }
 
 .index-btn:hover {
@@ -185,66 +195,70 @@ header.scrolled-up {
 }
 
 
+@media (min-width: 600px) {
+  .index-container {
+    margin-top : 0px; /* No margin on larger screens */
+    color : black;
+  }
 
-.bottom-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 2rem auto;
-  margin-bottom : 0px;
-  margin-top: 8rem;
-}
-
-.background-square {
-  background-color: #bca97a;
-  width: 100%;
-  padding-top: 60%;
-  position: relative;
-  overflow: hidden;
-}
-
-.bottom-overlay-image {
-  position: absolute;
-  top: -15%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+  .index-text {
+    color : rgb(0, 0, 0);
+    left : 49%;
+    top :23%;
+     display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  overflow: visible;
+    
+
+  }
+
+ .index-text-item {
+  margin: 0.2rem 0;
+  font-family: var(--font-oswald);
+  background-color: var(--light-brown-color);
+  padding: 0.2rem 0.6rem; /* background padding */
+  min-width: 10ch; /* min-width so background extends a bit to the right */
+  max-width: 20ch; /* max-width to limit how far it extends right */
 }
 
-.bottom-overlay-image img {
-  width: 80%;
-  height: auto;
-  object-fit: cover;
+.index-label {
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 2rem;
+  color : black;
+  left : 25%;
 }
 
-.bottom-text {
-  text-align: center;
-  margin-top: 12rem;
+.index-btn {
+  padding: 0.6rem 2rem; /* More padding for larger screens */
+  font-size: 1.2em; /* Larger font size */
+  white-space: nowrap; /* Prevents text from wrapping */
+  background-color: var(--contrast-color);
+
+}
+.index-btn:hover {
+
+  background-color: var(--light-brown-color);
+}
+.index-btn-wrapper {
+  position: absolute;
+  bottom: 5%;  /* or use e.g. 20px */
+  left: 85%;   /* push it to the right corner */
 }
 
-.bottom-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #000000;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 0.3rem;
 }
 
 
 
+
+/* Base styles (mobile-first) – no changes needed here */
 .thomas-presentation-container {
   position: relative;
   width: 100%;
   max-width: 800px;
   margin: 2rem auto;
   margin-top: 6rem;
+  margin-bottom : 10px;
 }
 
 .background-square {
@@ -267,6 +281,9 @@ header.scrolled-up {
   overflow: visible;
 }
 
+
+
+
 .thomas-presentation-overlay-image img {
   width: 80%;
   height: auto;
@@ -287,6 +304,50 @@ header.scrolled-up {
   text-decoration: none;
   border-radius: 0.3rem;
 }
+
+/* === Desktop styles === */
+@media (min-width: 600px) {
+
+  .thomas-presentation-container {
+    max-width: 80%;
+    position: relative; /* absolutely positioned image stays within */
+  }
+  
+  .background-square {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+    height: 400px;
+    position: relative; /* needed for absolutely positioned image to be relative to this container */
+  }
+
+  .thomas-presentation-text {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+    max-width: 60%;
+  }
+
+  .thomas-presentation-overlay-image {
+    position: absolute;
+    top: -10%; /* shifts image 10% upwards */
+    left: 65%; /* sticks out a bit to the right */
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    pointer-events: none; /* allows text interactions underneath */
+  }
+
+  .thomas-presentation-overlay-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+}
+
 
 
 .wrapper-boxes {
@@ -334,8 +395,23 @@ header.scrolled-up {
 }
 
 
+@media (min-width: 1200px) {
+  .wrapper-boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .box {
+    width: 30%;
+    max-width: 350px;
+    min-width: 220px;
+    font-size: 1.2em;
+  }
+}
+
 /* Initially hidden and slightly shifted */
-.thomas-presentation-container,
 .bottom-container,
 .index-container {
   opacity: 0;
@@ -344,12 +420,95 @@ header.scrolled-up {
 }
 
 /* When in view */
-.thomas-presentation-container.show,
 .bottom-container.show,
 .index-container.show {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+.services-overview-title {
+  text-align: center;
+  font-size: 2em;
+  color: var(--contrast-color);
+  text-transform: uppercase;
+}
+
+.bottom-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  margin-bottom : 0px;
+  margin-top: 8rem;
+}
+
+.background-square-bottom {
+  background-color: #bca97a;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom-overlay-image {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: visible;
+}
+
+.bottom-overlay-image img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.bottom-text {
+  text-align: center;
+  margin-top: 12rem;
+}
+
+.bottom-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 700px) {
+  .bottom-container {
+    margin-top : 10rem;
+    max-width: 80%; /* Increased from 50% to 70% */
+  }
+  .background-square-bottom {
+    height: 500px;
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    width : 100%;
+  }
+  .bottom-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+  .bottom-overlay-image img {
+    max-width: 500px; /* Increased from 500px to 700px */
+  } 
+
+  }
 
 
 .grid-layout {
@@ -389,13 +548,21 @@ header.scrolled-up {
 
 .span-4 { grid-column-end: span 4; grid-row-end: span 4; }
 
-
+.line-divider-service-overview{
+  width: 30%;             /* adjust width */
+  border: none;
+  border-top: 2px solid var(--contrast-color);
+  opacity: 1; /* Make sure it's fully opaque */
+  text-align: center;
+  margin: 1em auto;   /* 👈 auto left/right margins centers it */
+}
 
 .line-divider {
   width: 30%;             /* adjust width */
   border: none;
   border-top: 2px solid var(--contrast-color);
   opacity: 1; /* Make sure it's fully opaque */
+  text-align: center;
 }
 
 .line-divider-footer {
