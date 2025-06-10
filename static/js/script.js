@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-const fadeInElements = document.querySelectorAll('.box, .thomas-presentation-container, .bottom-container, .index-container');
+const fadeInElements = document.querySelectorAll('.box,  .bottom-container, .index-container');
 if (fadeInElements.length) {
   const fadeInObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
