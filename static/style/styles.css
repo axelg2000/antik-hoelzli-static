@@ -358,13 +358,15 @@ header.scrolled-up {
   grid-gap: 5px;
   grid-auto-rows: minmax(180px, auto);
   grid-auto-flow: dense;
-  padding: 5px;
+  /* padding: 5px; */
+  margin-top : 10.5rem;
+  margin-bottom: 1rem;
 }
 
 .grid-item {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  /* border-radius: 4px; */
 }
 
 .grid-item img {
