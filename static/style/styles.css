@@ -598,6 +598,8 @@ header.scrolled-up {
   width: 100%;
   padding: 2rem;
   text-align: center;
+  padding-bottom : 4rem; /* add some padding at the bottom */
+
 }
 
 .thomas-presentation-text-uber_uns {
@@ -630,9 +632,8 @@ header.scrolled-up {
 
 @media (min-width: 600px) {
   .uber_uns_container {
-
-    margin-top: 160px;
-  
+    margin-top: 170px;
+    
   }
 }
 
