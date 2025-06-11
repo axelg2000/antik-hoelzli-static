@@ -595,17 +595,18 @@ header.scrolled-up {
   margin-bottom: 10px;
 }
 
-.background-square {
-  background-color: #bca97a;
+.background-square-uber_uns {
+  background-color: var(--light-brown-color);
   width: 100%;
-  padding-top: 45%;
+  padding-top: 40%;
   position: relative;
   overflow: hidden;
+  height  : 380px;
 }
 
-.thomas-presentation-overlay-image {
+.thomas-presentation-overlay-image-uber_uns {
   position: absolute;
-  top: -5%;
+  top: -10%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -615,26 +616,18 @@ header.scrolled-up {
   overflow: visible;
 }
 
-.thomas-presentation-overlay-image img {
+.thomas-presentation-overlay-image-uber_uns img {
   width: 80%;
   height: auto;
   object-fit: cover;
+  border: 15px solid var(--light-brown-color);
 }
 
-.thomas-presentation-text {
+.thomas-presentation-text-uber_uns {
   text-align: center;
 }
 
-.thomas-presentation-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #000000;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 0.3rem;
-}
+
 
 /* === Desktop styles === */
 @media (min-width: 600px) {
@@ -676,11 +669,104 @@ header.scrolled-up {
     width: 100%;
     max-width: 450px;
     height: auto;
+    
   }
 }
 
 
+/* Base styles (mobile-first) */
+.uber_uns_container2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 10px;
+    z-index: 1; /* Bring it up above the upper container's background */
+  margin-top: -60px; /* Adjust overlap distance as needed */
 
+}
+
+.background-square-uber_uns2 {
+  /* background-color: #bca97a; */
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-uber_uns2 {
+  text-align: center;
+}
+
+.section-image-uber_uns2 {
+  position: static;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.section-image-uber_uns2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+    z-index: 1; /* ensure this image is above the lower container background */
+  border: 15px solid #fff;
+
+}
+
+.title-section-uber_uns2 {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  background-color: white;
+  top : -50px; /* shifts the title upwards */
+  padding : 0.8rem 1rem;
+}
+
+
+/* Base styles (mobile-first) */
+.uber_uns_container3 {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  /* margin-bottom: 10px; */
+  z-index: 0; /* default z-index for stacking context */
+
+
+}
+
+.background-square-uber_uns3 {
+  background-color: #bca97a;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: -1; /* push background behind the image above */
+  margin-top: -70px; /* only move the background up! */
+  padding-top: 60px; /* push the content back down */
+
+}
+
+.text-uber_uns3 {
+  text-align: center;
+}
+
+.section-image-uber_uns3 {
+  position: static;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.section-image-uber_uns3 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 
 
