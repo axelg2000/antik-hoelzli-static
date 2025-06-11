@@ -583,95 +583,60 @@ header.scrolled-up {
 }
 
 
-
-
-/* Base styles (mobile-first) – no changes needed here */
+/* Final stacking + slight overlap logic */
 .uber_uns_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   width: 100%;
-  max-width: 800px;
-  margin: 2rem auto;
-  margin-top: 14rem;
-  margin-bottom: 10px;
+  margin-top : 220px;
 }
 
 .background-square-uber_uns {
   background-color: var(--light-brown-color);
   width: 100%;
-  padding-top: 40%;
-  position: relative;
-  overflow: hidden;
-  height  : 380px;
-}
-
-.thomas-presentation-overlay-image-uber_uns {
-  position: absolute;
-  top: -10%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  overflow: visible;
-}
-
-.thomas-presentation-overlay-image-uber_uns img {
-  width: 80%;
-  height: auto;
-  object-fit: cover;
-  border: 15px solid var(--light-brown-color);
-}
-
-.thomas-presentation-text-uber_uns {
+  padding: 2rem;
   text-align: center;
 }
 
+.thomas-presentation-text-uber_uns {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top : 1rem;
+  font-size: 1.2em;
+  color : white;
+}
+
+.thomas-presentation-text-uber_uns h2{
+  color : black;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.thomas-presentation-overlay-image-uber_uns {
+  margin-top: -4rem; /* this lifts the image a bit above normal position */
+  z-index: 2; /* ensures image is above the background */
+}
+
+.thomas-presentation-overlay-image-uber_uns img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  border: 18px solid var(--light-brown-color);
+}
 
 
-/* === Desktop styles === */
 @media (min-width: 600px) {
-
   .uber_uns_container {
-    max-width: 80%;
-    position: relative; /* absolutely positioned image stays within */
-  }
 
-  .background-square {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 0;
-    height: 400px;
-    position: relative; /* needed for absolutely positioned image to be relative to this container */
-  }
-
-  .thomas-presentation-text {
-    flex: 1;
-    text-align: left;
-    padding: 2rem;
-    max-width: 60%;
-  }
-
-  .thomas-presentation-overlay-image {
-    position: absolute;
-    top: -10%; /* shifts image 10% upwards */
-    left: 65%; /* sticks out a bit to the right */
-    width: 40%;
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    pointer-events: none; /* allows text interactions underneath */
-  }
-
-  .thomas-presentation-overlay-image img {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-    
+    margin-top: 160px;
+  
   }
 }
+
+
 
 
 /* Base styles (mobile-first) */
@@ -726,6 +691,34 @@ header.scrolled-up {
 }
 
 
+@media (min-width: 600px) {
+
+  .uber_uns_container2 {
+    max-width: 100%;
+    position: relative; 
+
+  }
+   .title-section-uber_uns2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* center the container itself */
+  }
+  .section-image-uber_uns2 img {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    height: auto;
+    border: 15px solid #fff;
+  }
+}
+
+
+
+
+
+
+
 /* Base styles (mobile-first) */
 .uber_uns_container3 {
   position: relative;
@@ -754,22 +747,43 @@ header.scrolled-up {
 }
 
 .section-image-uber_uns3 {
-  position: static;
-  margin-top: 1rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: visible;
+  flex-wrap: wrap; /* allow images to wrap to the next line */
+  gap: 10px;       /* optional: space between images */
+  justify-content: center; /* center images horizontally */
+  align-items: center; /* center images vertically */
+  flex-wrap: wrap;
 }
 
 .section-image-uber_uns3 img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 300px;     /* fixed width */
+  height: 200px;    /* fixed height */
+  object-fit: cover; /* crop to fill container */
 }
 
 
+@media (min-width: 600px) {
 
+  .uber_uns_container3 {
+    max-width: 100%;
+    position: relative; 
+
+      flex-wrap: wrap;     /* allows wrapping onto the next line */
+
+
+  }
+  .section-image-uber_uns3 {
+  display: flex;
+  flex-wrap: wrap; /* allow images to wrap to the next line */
+  gap: 10px;       /* optional: space between images */
+}
+
+.section-image-uber_uns3 img {
+  width: 600px;     /* fixed width */
+  height: 400px;    /* fixed height */
+  object-fit: cover; /* crop to fill container */
+}
+}
 
 
 
