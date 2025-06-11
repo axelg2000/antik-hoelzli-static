@@ -194,6 +194,17 @@ header.scrolled-up {
   color: #ffffff;
 }
 
+.german-flag-black {
+  background-color: #000000;
+}
+
+.german-flag-red {
+  background-color: #DD0000;
+}
+
+.german-flag-gold {
+  background-color: #FFCC00;
+}
 
 @media (min-width: 600px) {
   .index-container {
@@ -215,7 +226,6 @@ header.scrolled-up {
  .index-text-item {
   margin: 0.2rem 0;
   font-family: var(--font-oswald);
-  background-color: var(--light-brown-color);
   padding: 0.2rem 0.6rem; /* background padding */
   min-width: 10ch; /* min-width so background extends a bit to the right */
   max-width: 20ch; /* max-width to limit how far it extends right */
@@ -1536,3 +1546,5 @@ gap: 40px;
   margin-bottom : 20px;
   font-weight: bold;
 }
+
+
