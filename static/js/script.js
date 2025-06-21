@@ -1,8 +1,15 @@
 // marketplace/static/js/script.js
 
+// Print a credit text in the console
+console.log(
+  '%cThis website has been created by Axel Giret for free %cLinkedIn: https://www.linkedin.com/in/axel-giret-b3b1a016a/\nEmail: giretaxel@gmail.com\n\n%cThe photos have been compressed and cropped by 11zion',
+  'background: #333; color: rgb(248, 239, 73); padding: 15px 15px; font-weight: bold; border-radius: 4px; font-size: 40px;', 
+  'color: #0077b5; font-style: italic; font-size: 20px;', 
+  'color: gray; font-size: 12px; font-style: italic;'
+);
+
 // All code runs only once the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM fully loaded!");
 
   // ✅ 1. Header hide/show on scroll
   let lastScroll = 0;
