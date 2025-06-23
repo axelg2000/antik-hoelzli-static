@@ -574,7 +574,7 @@ header.scrolled-up {
   border: none;
   border-top: 2px solid rgb(235, 235, 235);
   opacity: 1; /* Make sure it's fully opaque */
-    margin: 1em auto;   /* 👈 auto left/right margins centers it */
+    margin: 0.3em auto;   /* 👈 auto left/right margins centers it */
 
 }
 
@@ -902,7 +902,7 @@ header.scrolled-up {
 
   footer {
     flex-direction: column;
-    gap: 0px;
+    
   }
 
   .buttons-overlay a {
@@ -1045,28 +1045,21 @@ header.scrolled-up {
 
 
 
+/* Default for mobile/small screens */
 footer {
-  width : 100%;
-  /* margin-top: 20px; */
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-  gap : 20px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-top: 0px;
   padding: 20px;
   color: white;
   background-color: var(--contrast-color);
   font-size: 1em;
-  
+  display: flex;
+  gap: 5px;
+}
 
-  }
 
-@media (max-width: 768px) {
-    footer {
-      text-align: center;
-      align-items: center;
-      margin-top : 0px;
-    }
-  }
 
 .contact-item h3 {
   font-size: 1.2em;
@@ -1076,16 +1069,51 @@ footer {
 .offnungszeiten-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 3px;
 }
 
 .offnungszeiten-item, .address-item, .social-media-item {
   font-size: 0.8em;
 }
 
+.address-item a {
+  text-decoration: none;
+  color : inherit;
+}
+
 
 .impressum-container {
-  margin :20px;
-    margin-top : 180px;
+  margin: 20px;
+  margin-top: 180px;
 
+}
+
+.contact-item.impressum a {
+  /* Your styles here */
+  color : inherit;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+
+/* Media query for large screens (768px and up) */
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 5px;
+    text-align: left;
+    padding : 10px;
+    padding-top : 20px;
+  }
+ 
+  .contact-item {
+    font-size: 0.7em;
+    text-align: center;
+  }
+   .contact-item h3 {
+    font-size: 1em;
+
+  }
 }
