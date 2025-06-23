@@ -582,6 +582,9 @@ header.scrolled-up {
   .line-divider-footer {
     display: none;
   }
+  .grid-layout{
+    margin-top : 4.5em;
+  }
 }
 
 
@@ -1082,6 +1085,12 @@ footer {
 }
 
 
+.social-media-item a {
+  text-decoration: none;
+  color : inherit;
+}
+
+.social-media-item
 .impressum-container {
   margin: 20px;
   margin-top: 180px;
