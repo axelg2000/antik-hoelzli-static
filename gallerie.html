@@ -3,15 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallerie | Antik Hoelzli</title>
+  <title>Gallerie – Antike Möbel & Restaurationen | Antik Hölzli</title>
+  <meta name="description" content="Entdecken Sie unsere Sammlung antiker Möbel, Restaurationen und Einzelstücke. Jedes Stück mit Liebe zum Detail aufgearbeitet – Antik Hölzli in Bad Waldsee." />
+  <link rel="canonical" href="https://antik-hoelzli.de/gallerie.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gallerie – Antike Möbel & Restaurationen" />
+  <meta property="og:description" content="Entdecken Sie unsere Sammlung antiker Möbel und Restaurationen bei Antik Hölzli in Bad Waldsee." />
+  <meta property="og:url" content="https://antik-hoelzli.de/gallerie.html" />
+  <meta property="og:image" content="https://antik-hoelzli.de/static/style/images/favicon/logo_hoelzli_11zon.png" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="Antik Hölzli" />
 
   <!-- Favicon -->
-<link rel="icon" type="image/png" href="static/style/images/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="static/style/images/favicon/favicon.svg" />
-<link rel="shortcut icon" href="static/style/images/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="static/style/images/favicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Antik" />
-<link rel="manifest" href="static/style/images/favicon/site.webmanifest" />
+  <link rel="icon" type="image/png" href="static/style/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="static/style/images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="static/style/images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/style/images/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Antik Hölzli" />
+  <link rel="manifest" href="static/style/images/favicon/site.webmanifest" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -27,15 +38,18 @@
   <!-- Header & Navigation -->
   <header>
     <nav>
-      <a href="index.html">
-        <div class="logo-header">
-          <img src="static/style/images/favicon/logo_hoelzli_11zon.png" alt="Antik Hoelzli Logo" />
-        </div>
+      <a href="index.html" class="logo-header">
+        <img src="static/style/images/favicon/logo_hoelzli_11zon.png" alt="Antik Hoelzli Logo" />
       </a>
+      <button class="hamburger" aria-label="Menü öffnen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="nav-item-container">
-        <a href="gallerie.html">Gallerie</a>
-        <a href="uber_uns.html">Uber Uns</a>
-        <a href="kontakt.html" class="questions-button">KONTAKT</a>
+        <a href="index.html">Startseite</a>
+        <a href="gallerie.html" class="active">Gallerie</a>
+        <a href="uber_uns.html">Über Uns & Kontakt</a>
       </div>
     </nav>
   </header>
@@ -44,173 +58,193 @@
 
 
 <div class="grid-layout">
+  <!-- Row 1: big left + 2 small right -->
   <div class="grid-item span-2">
-    <img src="static/style/images/furnitures/chair_pepper_11zon.jpg" alt="Antikes Möbelstück 1">
+    <img src="static/style/images/furnitures/chair_pepper_11zon.jpg" alt="Antiker Stuhl">
   </div>
   <div class="grid-item">
-    <img src="static/style/images/gallerie_images/DSC_0782_11zon.jpg" alt="Antikes Möbelstück 1">
-  </div>
-  
- 
-  <div class="grid-item">
-    <img src="static/style/images/gallerie_images/DSC_0817_11zon.jpg" alt="Antikes Möbelstück 3">
-  </div>
-   <div class="grid-item span-2">
-    <img src="static/style/images/gallerie_images/DSC_0785_11zon.jpg" alt="Antikes Möbelstück 2">
+    <img src="static/style/images/gallerie_images/DSC_0782_11zon.jpg" alt="Antikes Möbelstück">
   </div>
   <div class="grid-item">
-    <img src="static/style/images/gallerie_images/DSC_0803_11zon.jpg" alt="Antikes Möbelstück 1">
-  </div>
-    <div class="grid-item">
-    <img src="static/style/images/gallerie_images/DSC_0882_11zon.jpg" alt="Antikes Möbelstück 1">
-  </div>
-  <div class="grid-item span-2">
-    <img src="static/style/images/gallerie_images/DSC_0853_11zon copy.jpg" alt="Antikes Möbelstück 1">
-  </div>
-  
-  <div class="grid-item span-2">
-    <img src="static/style/images/gallerie_images/DSC_0770_11zon.jpg" alt="Antikes Möbelstück 2">
-  </div>
-  <div class="grid-item span-2">
-    <img src="static/style/images/book_11zon.jpg" alt="Antikes Möbelstück 3">
-  </div>
-  <div class="grid-item span-2">
-    <img src="static/style/images/gallerie_images/DSC_0876_11zon.jpg" alt="Antikes Möbelstück 2">
+    <img src="static/style/images/gallerie_images/DSC_0817_11zon.jpg" alt="Antikes Möbelstück">
   </div>
 
+  <!-- Row 2: 2 small left + big right -->
   <div class="grid-item">
-    <img src="static/style/images/gallerie_images/DSC_0892_11zon copy.jpg" alt="Antikes Möbelstück 1">
+    <img src="static/style/images/gallerie_images/DSC_0803_11zon.jpg" alt="Antikes Möbelstück">
   </div>
   <div class="grid-item">
-    <img src="static/style/images/gallerie_images/DSC_0907_11zon.jpg" alt="Antikes Möbelstück 5">
+    <img src="static/style/images/gallerie_images/DSC_0882_11zon.jpg" alt="Antikes Möbelstück">
   </div>
-  
   <div class="grid-item span-2">
-    <img src="static/style/images/gallerie_images/DSC_0784_11zon.jpg" alt="Antikes Möbelstück 3">
-  </div>
-<div class="grid-item span-2">
-    <img src="static/style/images/gallerie_images/DSC_0911_11zon copy.jpg" alt="Antikes Möbelstück 4">
+    <img src="static/style/images/gallerie_images/DSC_0785_11zon.jpg" alt="Antikes Möbelstück">
   </div>
 
+  <!-- Row 3: big left + 2 small right -->
   <div class="grid-item span-2">
-    <img src="static/style/images/gallerie_images/DSC_0901_11zon copy.jpg" alt="Antikes Möbelstück 4">
+    <img src="static/style/images/gallerie_images/DSC_0853_11zon copy.jpg" alt="Antikes Möbelstück">
   </div>
   <div class="grid-item">
-  <img src="static/style/images/gallerie_images/DSC_0767_11zon.jpg" alt="Antikes Möbelstück 8">
-</div>
-
-  
- 
-<div class="grid-item">
-  <img src="static/style/images/gallerie_images/DSC_0914_11zon.jpg" alt="Antikes Möbelstück 7">
-</div>
-<div class="grid-item">
-    <img src="static/style/images/gallerie_images/DSC_0821_11zon.jpg" alt="Antikes Möbelstück 6">
+    <img src="static/style/images/gallerie_images/DSC_0766_11zon.jpg" alt="Antikes Möbelstück">
   </div>
-   <div class="grid-item">
-    <img src="static/style/images/gallerie_images/DSC_0909_11zon.jpg" alt="Antikes Möbelstück 6">
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0797_11zon.jpg" alt="Antikes Möbelstück">
   </div>
 
-<div class="grid-item span-2">
-  <img src="static/style/images/gallerie_images/DSC_0771_11zon.jpg" alt="Antikes Möbelstück 9">
-</div>
-<div class="grid-item span-2">
-  <img src="static/style/images/gallerie_images/DSC_0826_11zon.jpg" alt="Antikes Möbelstück 10">
-</div>
-<div class="grid-item">
-  <img src="static/style/images/gallerie_images/DSC_0842_11zon.jpg" alt="Antikes Möbelstück">
-</div>
-<div class="grid-item">
-  <img src="static/style/images/gallerie_images/DSC_0829_11zon (1).jpg" alt="Antikes Möbelstück">
+  <!-- Row 4: 2 small left + big right -->
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0892_11zon copy.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0907_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item span-2">
+    <img src="static/style/images/gallerie_images/DSC_0770_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+
+  <!-- Row 5: big left + 2 small right -->
+  <div class="grid-item span-2">
+    <img src="static/style/images/gallerie_images/DSC_0876_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0807_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0812_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+
+  <!-- Row 6: 2 small left + big right -->
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0784_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0767_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item span-2">
+    <img src="static/style/images/gallerie_images/DSC_0911_11zon copy.jpg" alt="Antikes Möbelstück">
+  </div>
+
+  <!-- Row 7: big left + 2 small right -->
+  <div class="grid-item span-2">
+    <img src="static/style/images/gallerie_images/DSC_0901_11zon copy.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0914_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0821_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+
+  <!-- Row 8: 2 small left + big right -->
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0909_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0831_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item span-2">
+    <img src="static/style/images/gallerie_images/DSC_0771_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+
+  <!-- Row 9: big left + 2 small right -->
+  <div class="grid-item span-2">
+    <img src="static/style/images/gallerie_images/DSC_0826_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0842_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0829_11zon (1).jpg" alt="Antikes Möbelstück">
+  </div>
+
+  <!-- Row 10: 2 small left + big right -->
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0867_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0862_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item span-2">
+    <img src="static/style/images/gallerie_images/DSC_0788_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+
+  <!-- Row 11: big left + 2 small right -->
+  <div class="grid-item span-2">
+    <img src="static/style/images/gallerie_images/DSC_0844_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0877_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0935_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+
+  <!-- Row 12: 2 small left + big right -->
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0927_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0926_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item span-2">
+    <img src="static/style/images/gallerie_images/DSC_0921_11zon copy.jpg" alt="Antikes Möbelstück">
+  </div>
+
+  <!-- Row 13: big left + 2 small right -->
+  <div class="grid-item span-2">
+    <img src="static/style/images/gallerie_images/DSC_0945_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0947_11zon.png" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0953_11zon.jpg" alt="Antikes Möbelstück">
+  </div>
+
+  <!-- Row 14: 2 small left + big right -->
+  <div class="grid-item">
+    <img src="static/style/images/gallerie_images/DSC_0906-modified_11zon.png" alt="Antikes Möbelstück">
+  </div>
+  <div class="grid-item">
+    <img src="static/style/images/book_11zon.jpg" alt="Antike Bücher">
+  </div>
 </div>
 
-<div class="grid-item span-2">
-  <img src="static/style/images/gallerie_images/DSC_0788_11zon.jpg" alt="Antikes Möbelstück 9">
-</div>
-<div class="grid-item span-2">
-  <img src="static/style/images/gallerie_images/DSC_0844_11zon.jpg" alt="Antikes Möbelstück Neu">
-</div>
-<div class="grid-item">
-  <img src="static/style/images/gallerie_images/DSC_0862_11zon.jpg" alt="Antikes Möbelstück Neu">
-</div>
-<div class="grid-item">
-  <img src="static/style/images/gallerie_images/DSC_0877_11zon.jpg" alt="Antikes Möbelstück">
-</div>
-<div class="grid-item span-2">
-  <img src="static/style/images/gallerie_images/DSC_0921_11zon copy.jpg" alt="Antikes Möbelstück">
-</div>
-<div class="grid-item span-2">
-  <img src="static/style/images/gallerie_images/DSC_0945_11zon.jpg" alt="Antikes Möbelstück Neu">
-</div>
-<div class="grid-item span-2">
-  <img src="static/style/images/gallerie_images/DSC_0954_11zon.png" alt="Antikes Möbelstück">
-</div>
-<div class="grid-item">
-  <img src="static/style/images/gallerie_images/DSC_0947_11zon.png" alt="Antikes Möbelstück Neu">
-</div>
-<div class="grid-item">
-  <img src="static/style/images/gallerie_images/DSC_0927_11zon.jpg" alt="Antikes Möbelstück Neu">
-</div>
-<div class="grid-item">
-  <img src="static/style/images/gallerie_images/DSC_0862_11zon.jpg" alt="Antikes Möbelstück Neu">
-</div>
-<div class="grid-item">
-  <img src="static/style/images/gallerie_images/DSC_0862_11zon.jpg" alt="Antikes Möbelstück Neu">
-</div>
 
-  
-  <!-- Add more images similarly -->
-</div>
-
-
-  <!-- Footer -->
   <footer>
-    <div class="contact-item">
-      <h3>Antik Hölzli</h3>
-    </div>
-    <hr class="line-divider-footer" />
-
-    <div class="contact-item">
-      <h3>Öffnungszeiten</h3>
-      <div class="offnungszeiten-container">
-        <div class="offnungszeiten-item"><strong>Montag:</strong> 10:00 - 18:00</div>
-        <div class="offnungszeiten-item"><strong>Dienstag:</strong> 10:00 - 18:00</div>
-        <div class="offnungszeiten-item"><strong>Mittwoch:</strong> 10:00 - 18:00</div>
-        <div class="offnungszeiten-item"><strong>Donnerstag:</strong> 10:00 - 18:00</div>
-        <div class="offnungszeiten-item"><strong>Freitag:</strong> 10:00 - 18:00</div>
+    <div class="footer-accent"></div>
+    <div class="footer-content">
+      <div class="footer-section footer-brand">
+        <h3>Antik Hölzli</h3>
+        <p>Restauration mit Leidenschaft</p>
+      </div>
+      <div class="footer-section">
+        <h4>Öffnungszeiten</h4>
+        <p>Montag – Freitag<br>10:00 – 18:00</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kontakt</h4>
+        <a href="https://maps.google.com/?q=Kleineschle+Weg+5,+88339+Bad+Waldsee,+Deutschland" target="_blank" rel="noopener noreferrer">Kleineschle Weg 5<br>88339 Bad Waldsee</a>
+        <a href="tel:+491733816048">+49 173 381 6048</a>
+        <a href="mailto:hoelzli@t-online.de">hoelzli@t-online.de</a>
+      </div>
+      <div class="footer-section">
+        <h4>Soziale Medien</h4>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/antikhoelzli/" target="_blank" rel="noopener noreferrer">
+            <img src="static/style/images/favicon/insta_logo.png" alt="Instagram"> Instagram
+          </a>
+          <a href="https://www.facebook.com/antikhoelzli/" target="_blank" rel="noopener noreferrer">
+            <img src="static/style/images/favicon/facebook_logo.webp" alt="Facebook"> Facebook
+          </a>
+        </div>
       </div>
     </div>
-
-    <hr class="line-divider-footer" />
-
-    <div class="contact-item">
-      <h3>Kontakt</h3>
-      <div class="address-item"> <a href="https://maps.google.com/?q=Kleineschle+Weg+5,+88339+Bad+Waldsee,+Deutschland" target="_blank">Kleineschle Weg 5, 88339 Bad Waldsee, Deutschland</a></div>
-      <div class="address-item"><a href="tel:+491733816048">+49 1733816048</a></div>
-      <div class="address-item"><a href="mailto:hoelzli@t-online.de">hoelzli@t-online.de</a></div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Antik Hölzli</span>
+      <a href="impressum.html">Impressum</a>
+      <span>Erstellt von <a href="mailto:giretaxel@gmail.com">Axel Giret</a></span>
     </div>
-
-    <hr class="line-divider-footer" />
-
-    <div class="contact-item">
-      <h3>Soziale Medien</h3>
-      <div class="social-media-item">
-        <a href="https://www.instagram.com/antikhoelzli/" target="_blank">
-          <img src="static/style/images/favicon/insta_logo.png" alt="Instagram Logo" style="height: 20px; vertical-align: middle; margin-right: 6px;">
-          Instagram
-        </a>
-      </div>
-      <div class="social-media-item">
-        <a href="https://www.facebook.com/antikhoelzli/" target="_blank">
-          <img src="static/style/images/favicon/facebook_logo.webp" alt="Facebook Logo" style="height: 20px; vertical-align: middle; margin-right: 6px;">
-          Facebook
-        </a>
-      </div>
-    </div>
-
-    <hr class="line-divider-footer" />
-
-    <div class="contact-item impressum"><a href="impressum.html">Impressum</a></div>
   </footer>
 
   <!-- Local JS -->

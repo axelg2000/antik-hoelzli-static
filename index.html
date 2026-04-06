@@ -3,15 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Antik Hoelzli</title>
+  <title>Antik Hölzli – Restauration & Verkauf antiker Möbel in Bad Waldsee</title>
+  <meta name="description" content="Antik Hölzli in Bad Waldsee: Professionelle Restauration, Reparatur und Verkauf antiker Möbel. Persönliche Beratung von Thomas Hölzli – Montag bis Freitag." />
+  <link rel="canonical" href="https://antik-hoelzli.de/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Antik Hölzli – Restauration & Verkauf antiker Möbel" />
+  <meta property="og:description" content="Professionelle Restauration, Reparatur und Verkauf antiker Möbel in Bad Waldsee. Persönliche Beratung von Thomas Hölzli." />
+  <meta property="og:url" content="https://antik-hoelzli.de/" />
+  <meta property="og:image" content="https://antik-hoelzli.de/static/style/images/favicon/logo_hoelzli_11zon.png" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="Antik Hölzli" />
 
   <!-- Favicon -->
-<link rel="icon" type="image/png" href="static/style/images/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="static/style/images/favicon/favicon.svg" />
-<link rel="shortcut icon" href="static/style/images/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="static/style/images/favicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Antik" />
-<link rel="manifest" href="static/style/images/favicon/site.webmanifest" />
+  <link rel="icon" type="image/png" href="static/style/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="static/style/images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="static/style/images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/style/images/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Antik Hölzli" />
+  <link rel="manifest" href="static/style/images/favicon/site.webmanifest" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -21,171 +32,163 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "Antik Hölzli",
+    "description": "Professionelle Restauration, Reparatur und Verkauf antiker Möbel in Bad Waldsee.",
+    "url": "https://antik-hoelzli.de",
+    "telephone": "+491733816048",
+    "email": "hoelzli@t-online.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kleineschle Weg 5",
+      "addressLocality": "Bad Waldsee",
+      "postalCode": "88339",
+      "addressCountry": "DE"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://www.instagram.com/antikhoelzli/",
+      "https://www.facebook.com/antikhoelzli/"
+    ],
+    "image": "https://antik-hoelzli.de/static/style/images/favicon/logo_hoelzli_11zon.png"
+  }
+  </script>
 </head>
 
 <body>
   <header>
     <nav>
-      <a href="index.html">
-        <div class="logo-header">
-          <img src="static/style/images/favicon/logo_hoelzli_11zon.png" alt="Welcome to Antik Hoelzli" />
-        </div>
+      <a href="index.html" class="logo-header">
+        <img src="static/style/images/favicon/logo_hoelzli_11zon.png" alt="Antik Hoelzli Logo" />
       </a>
+      <button class="hamburger" aria-label="Menü öffnen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="nav-item-container">
+        <a href="index.html" class="active">Startseite</a>
         <a href="gallerie.html">Gallerie</a>
-        <a href="uber_uns.html">Über Uns</a>
-        <a href="kontakt.html" class="questions-button">KONTAKT</a>
+        <a href="uber_uns.html">Über Uns & Kontakt</a>
       </div>
     </nav>
   </header>
 
-<div class="index-container">
+<div class="hero">
   <picture>
-    <!-- Image for desktop -->
     <source srcset="static/style/images/pretty_pepper_books_11zon.png" media="(min-width: 600px)">
-    <!-- Image for mobile (default) -->
-    <img src="static/style/images/clock_11zon.jpg" class="d-block w-100" alt="Antikes Möbelstück">
+    <img src="static/style/images/clock_11zon.jpg" alt="Antike Bücher und Kaffeemühle">
   </picture>
-
-  <div class="index-label">Antik Hölzli</div>
-
-  <div class="index-text">
-<div class="index-text-item">Renovieren</div>
-<div class="index-text-item">Verkaufen</div>
-<div class="index-text-item">Beraten</div>
-  </div>
-
-
-</div>
-  
-  <div class="thomas-presentation-container">
-    <div class="background-square">
-      <div class="thomas-presentation-text">
-        <h2>THOMAS HÖLZLI</h2>
-        <p>…  widmet sich seit Jahrzehnten mit Leidenschaft und handwerklichem Geschick der Restauration von Möbelstücken. Mit großen Wert auf persönliche Betreuung und viel Liebe zum Detail erkennt er die Bedürfnisse jedes Möbelstücks und wendet seine umfangreiche Erfahrung an, um sie zum Strahlen zu bringen. Ob Biedermeier-Schrank  oder Erbstück voller Erinnerungen -jedes Möbelstück wird so behandelt, als wäre es sein eigenes.</p>
-        <a href="uber_uns.html" class="thomas-presentation-btn">Lernen Sie uns kennen</a>
-      </div>
-    </div>
-  
-    <div class="thomas-presentation-overlay-image">
-      <img src="static/style/images/thomas_frame2_11zon.jpg" alt="Overlay Image">
-    </div>
-  </div>
-
-  <div class="services-overview-title">Unsere Leistungen</div>
-  <hr class="line-divider-service-overview">
-  
-<div class="wrapper-boxes">
-  <div class="box">
-    <img src="static/style/images/flaticon/build.png" alt="Small Image 1" loading="lazy">
-    <!-- icon credits <a href="https://www.flaticon.com/free-icons/furniture" title="furniture icons">Furniture icons created by Leremy - Flaticon</a> -->
-    <h4>Reparieren</h4>
-    <p>Wir bringen Ihre Möbel wieder in Schuss und rekonstruieren fehlende Teile.</p>
-  </div>
-
-  
-
-  <div class="box">
-    <img src="static/style/images/flaticon/clean.png" alt="Small Image 3" loading="lazy">
-    <!--  icon credits : <a href="https://www.flaticon.com/free-icons/clean" title="clean icons" target="_blank" rel="noopener noreferrer">
-      Freepik - Flaticon
-    </a> -->
-    <h4>Restaurieren</h4>
-    <p>Alle Holzarten mit Handpolitur-Expertise (Schellack, Lackierung, Wachsen, Ölen). </p>
-  </div>
-  
-
-  <div class="box">
-    <img src="static/style/images/flaticon/furniture.png" alt="Small Image 4" loading="lazy">
-    <!-- icon credits <a href="https://www.flaticon.com/free-icons/furniture" title="furniture icons">Furniture icons created by Peerapak Takpho - Flaticon</a> -->
-    <h4>Verkauf</h4>
-    <p>Antike Stücke für Ihr Zuhause von verschiedenen Epochen und für jeden Geschmack.</p>
-  </div>
-  <div class="box">
-    <img src="static/style/images/flaticon/cash-on-delivery.png" alt="Small Image 2" loading="lazy">
-    <!-- icon credits <a href="https://www.flaticon.com/free-icons/cash-on-delivery" title="cash on delivery icons">Cash on delivery icons created by Design Circle - Flaticon</a> -->
-    <h4>Ankauf</h4>
-    <p>Ein neues Leben für Ihre Möbel in Zusammenarbeit mit erfahrenen Handwerkern.</p>
-  </div>
-
-  <div class="box">
-    <img src="static/style/images/flaticon/consulting.png" alt="Small Image 5" loading="lazy">
-    <!-- icon credits <a href="https://www.flaticon.com/free-icons/consulting" title="consulting icons">Consulting icons created by afif fudin - Flaticon</a> -->
-    <h4>Beratung</h4>
-    <p>Fachkundige Begutachtung und Unterstützung vor Ort.</p>
-  </div>
-
-  <div class="box">
-    <img src="static/style/images/flaticon/delivery.png" alt="Small Image 6" loading="lazy">
-    <!-- icon credits <a href="https://www.flaticon.com/free-icons/fast-delivery" title="fast delivery icons">Fast delivery icons created by C-mo Box - Flaticon</a> -->
-    <h4>Lieferung</h4>
-    <p>Schnell und zuverlässig direkt zu Ihnen nach Hause.</p>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Antik Hölzli</h1>
+    <div class="hero-divider"></div>
+    <p class="hero-tagline">Renovieren &middot; Verkaufen &middot; Beraten</p>
   </div>
 </div>
   
-  <div class="bottom-container">
-    <div class="background-square-bottom">
-      <div class="bottom-text">
-        <h2>Außergewöhnliche Stücke</h2>
-        <p>In unserem Sortiment finden Sie immer wieder außergewöhnliche und einzigartige Möbelstücke mit Geschichte und Charakter.
-
-        </p>
-        <a href="gallerie.html" class="bottom-btn">Gallerie ansehen</a>
+  <section class="services-section">
+    <h2 class="services-title">Unsere Leistungen</h2>
+    <div class="services-cards">
+      <div class="service-card box">
+        <img src="static/style/images/flaticon/build.png" alt="Reparieren" loading="lazy">
+        <h4>Reparieren</h4>
+        <p>Wir bringen Ihre Möbel wieder in Schuss und rekonstruieren fehlende Teile.</p>
+      </div>
+      <div class="service-card box">
+        <img src="static/style/images/flaticon/clean.png" alt="Restaurieren" loading="lazy">
+        <h4>Restaurieren</h4>
+        <p>Alle Holzarten mit Handpolitur-Expertise (Schellack, Lackierung, Wachsen, Ölen).</p>
+      </div>
+      <div class="service-card box">
+        <img src="static/style/images/flaticon/furniture.png" alt="Verkauf" loading="lazy">
+        <h4>Verkauf</h4>
+        <p>Antike Stücke für Ihr Zuhause von verschiedenen Epochen und für jeden Geschmack.</p>
+      </div>
+      <div class="service-card box">
+        <img src="static/style/images/flaticon/cash-on-delivery.png" alt="Ankauf" loading="lazy">
+        <h4>Ankauf</h4>
+        <p>Ein neues Leben für Ihre Möbel in Zusammenarbeit mit erfahrenen Handwerkern.</p>
+      </div>
+      <div class="service-card box">
+        <img src="static/style/images/flaticon/consulting.png" alt="Beratung" loading="lazy">
+        <h4>Beratung</h4>
+        <p>Fachkundige Begutachtung und Unterstützung vor Ort.</p>
+      </div>
+      <div class="service-card box">
+        <img src="static/style/images/flaticon/delivery.png" alt="Lieferung" loading="lazy">
+        <h4>Lieferung</h4>
+        <p>Schnell und zuverlässig direkt zu Ihnen nach Hause.</p>
       </div>
     </div>
-  
-    <div class="bottom-overlay-image">
-      <img src="static/style/images/panorama/chair_wide_view/chair-art_11zon.png" alt="Overlay Image" loading="lazy">
+  </section>
+
+  <section class="gallery-cta">
+    <div class="gallery-cta-image">
+      <img src="static/style/images/panorama/chair_wide_view/chair-art_11zon.png" alt="Antiker Stuhl" loading="lazy">
     </div>
-  </div>
+    <div class="gallery-cta-text">
+      <h2>Außergewöhnliche Stücke</h2>
+      <p>In unserem Sortiment finden Sie immer wieder außergewöhnliche und einzigartige Möbelstücke mit Geschichte und Charakter.</p>
+      <a href="gallerie.html" class="about-intro-btn">Gallerie ansehen</a>
+    </div>
+  </section>
+
+  <section class="about-intro">
+    <div class="about-intro-image">
+      <img src="static/style/images/thomas_frame2_11zon.jpg" alt="Thomas Hölzli bei der Arbeit">
+    </div>
+    <div class="about-intro-text">
+      <h2>Thomas Hölzli</h2>
+      <p>Seit Jahrzehnten restauriert Thomas Hölzli antike Möbel mit Leidenschaft und Liebe zum Detail. Jedes Stück wird behandelt, als wäre es sein eigenes.</p>
+      <a href="uber_uns.html" class="about-intro-btn">Lernen Sie uns kennen</a>
+    </div>
+  </section>
   
   <footer>
-    <div class="contact-item">
-      <h3>Antik Hölzli</h3>
-    </div>
-    <hr class="line-divider-footer" />
-
-    <div class="contact-item">
-      <h3>Öffnungszeiten</h3>
-      <div class="offnungszeiten-container">
-        <div class="offnungszeiten-item"><strong>Montag:</strong> 10:00 - 18:00</div>
-        <div class="offnungszeiten-item"><strong>Dienstag:</strong> 10:00 - 18:00</div>
-        <div class="offnungszeiten-item"><strong>Mittwoch:</strong> 10:00 - 18:00</div>
-        <div class="offnungszeiten-item"><strong>Donnerstag:</strong> 10:00 - 18:00</div>
-        <div class="offnungszeiten-item"><strong>Freitag:</strong> 10:00 - 18:00</div>
+    <div class="footer-accent"></div>
+    <div class="footer-content">
+      <div class="footer-section footer-brand">
+        <h3>Antik Hölzli</h3>
+        <p>Restauration mit Leidenschaft</p>
+      </div>
+      <div class="footer-section">
+        <h4>Öffnungszeiten</h4>
+        <p>Montag – Freitag<br>10:00 – 18:00</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kontakt</h4>
+        <a href="https://maps.google.com/?q=Kleineschle+Weg+5,+88339+Bad+Waldsee,+Deutschland" target="_blank" rel="noopener noreferrer">Kleineschle Weg 5<br>88339 Bad Waldsee</a>
+        <a href="tel:+491733816048">+49 173 381 6048</a>
+        <a href="mailto:hoelzli@t-online.de">hoelzli@t-online.de</a>
+      </div>
+      <div class="footer-section">
+        <h4>Soziale Medien</h4>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/antikhoelzli/" target="_blank" rel="noopener noreferrer">
+            <img src="static/style/images/favicon/insta_logo.png" alt="Instagram"> Instagram
+          </a>
+          <a href="https://www.facebook.com/antikhoelzli/" target="_blank" rel="noopener noreferrer">
+            <img src="static/style/images/favicon/facebook_logo.webp" alt="Facebook"> Facebook
+          </a>
+        </div>
       </div>
     </div>
-
-    <hr class="line-divider-footer" />
-
-    <div class="contact-item">
-      <h3>Kontakt</h3>
-      <div class="address-item"> <a href="https://maps.google.com/?q=Kleineschle+Weg+5,+88339+Bad+Waldsee,+Deutschland" target="_blank">Kleineschle Weg 5, 88339 Bad Waldsee, Deutschland</a></div>
-      <div class="address-item"><a href="tel:+491733816048">+49 1733816048</a></div>
-      <div class="address-item"><a href="mailto:hoelzli@t-online.de">hoelzli@t-online.de</a></div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Antik Hölzli</span>
+      <a href="impressum.html">Impressum</a>
+      <span>Erstellt von <a href="mailto:giretaxel@gmail.com">Axel Giret</a></span>
     </div>
-
-    <hr class="line-divider-footer" />
-
-    <div class="contact-item">
-      <h3>Soziale Medien</h3>
-      <div class="social-media-item">
-        <a href="https://www.instagram.com/antikhoelzli/" target="_blank">
-          <img src="static/style/images/favicon/insta_logo.png" alt="Instagram Logo" style="height: 20px; vertical-align: middle; margin-right: 6px;">
-          Instagram
-        </a>
-      </div>
-      <div class="social-media-item">
-        <a href="https://www.facebook.com/antikhoelzli/" target="_blank">
-          <img src="static/style/images/favicon/facebook_logo.webp" alt="Facebook Logo" style="height: 20px; vertical-align: middle; margin-right: 6px;">
-          Facebook
-        </a>
-      </div>
-    </div>
-
-    <hr class="line-divider-footer" />
-
-    <div class="contact-item impressum"><a href="impressum.html">Impressum</a></div>
   </footer>
   
   <!-- Local JS -->

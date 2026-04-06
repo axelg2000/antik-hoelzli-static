@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector('header');
 
   window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+    const currentScroll = window.scrollY;
 
     if (currentScroll <= 60) {
       header.style.transform = 'translateY(0)';
@@ -31,6 +31,24 @@ document.addEventListener("DOMContentLoaded", () => {
     lastScroll = currentScroll;
   });
 
+  // Hamburger menu toggle
+  const hamburger = document.querySelector('.hamburger');
+  const navItems = document.querySelector('.nav-item-container');
+
+  if (hamburger && navItems) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navItems.classList.toggle('open');
+    });
+
+    // Close menu when a link is clicked
+    navItems.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navItems.classList.remove('open');
+      });
+    });
+  }
 
 const fadeInElements = document.querySelectorAll('.box,  .bottom-container, .index-container');
 if (fadeInElements.length) {
@@ -51,11 +69,11 @@ if (fadeInElements.length) {
 
   // ✅ 7. Copy email to clipboard
   window.copyEmail = function () {
-    const email = "your@email.com";
+    const email = "hoelzli@t-online.de";
     navigator.clipboard.writeText(email).then(() => {
-      alert("Email copied to clipboard!");
+      alert("E-Mail-Adresse kopiert!");
     }).catch(err => {
-      alert("Failed to copy email.");
+      alert("E-Mail konnte nicht kopiert werden.");
     });
   };
 });

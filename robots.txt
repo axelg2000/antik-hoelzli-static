@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /static/style/images/favicon/
+
+Sitemap: https://antik-hoelzli.de/sitemap.xml
